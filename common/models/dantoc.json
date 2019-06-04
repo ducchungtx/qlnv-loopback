@@ -1,0 +1,33 @@
+{
+  "name": "dantoc",
+  "plural": "dantocs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "maDanToc": {
+      "type": "string",
+      "required": true
+    },
+    "tenDanToc": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "nhanvien": {
+      "type": "hasMany",
+      "model": "nhanvien",
+      "foreignKey": "maDanToc",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

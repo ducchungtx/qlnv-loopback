@@ -1,0 +1,7 @@
+{
+  "mongodb": {
+    "url": "mongodb://qti:abcd123@ds131737.mlab.com:31737/qlnv",
+    "name": "mongodb",
+    "connector": "loopback-connector-mongodb"
+  }
+}
